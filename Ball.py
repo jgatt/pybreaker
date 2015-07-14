@@ -7,7 +7,7 @@ class Ball(pygame.sprite.Sprite):
     def __init__(self, rect_centerx, rect_centery):
         pygame.sprite.Sprite.__init__(self)
         
-        sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'big_ball.PNG')
+        sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'big_ball.png')
         self.image = pygame.image.load(sys_name).convert()
 
         rand_sound = random.randint(0,2)

@@ -24,7 +24,7 @@ def Menu():
     
     comp_ball.SPAWNSPEEDS()
     
-    sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'Menu Background.JPG')
+    sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'MenuBackground.jpg')
     background = pygame.image.load(sys_name).convert()
     
     sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'COOLFONT.ttf')
@@ -256,7 +256,7 @@ def PyBreaker_MainMenu(screen, help_check, text_group):
     for text in text_group:
         text_group.remove(text)
             
-    sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'Menu Background.JPG')
+    sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'MenuBackground.jpg')
     background = pygame.image.load(sys_name).convert()    
             
     screen.blit(background, (0,0))
@@ -267,7 +267,7 @@ def PyBreaker_Help(screen, text_group):
     for text in text_group:
         text_group.remove(text)
     
-    sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'Help Background.JPG')
+    sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'HelpBackground.jpg')
     background = pygame.image.load(sys_name).convert()
                     
     screen.blit(background, (0,0))

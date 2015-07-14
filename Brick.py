@@ -30,4 +30,4 @@ class Brick(pygame.sprite.Sprite):
         return self.score
     
         
-list_img = ['big_tile_1.PNG', 'big_tile_2.PNG', 'big_tile_3.PNG', 'big_tile_4.PNG', 'big_tile_5.PNG', 'SPECIALTILE1.PNG', 'SPECIALTILE2.PNG', 'GOLDTILE.PNG']
+list_img = ['big_tile_1.png', 'big_tile_2.png', 'big_tile_3.png', 'big_tile_4.png', 'big_tile_5.png', 'SPECIALTILE1.png', 'SPECIALTILE2.png', 'GOLDTILE.png']

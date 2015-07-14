@@ -23,7 +23,7 @@ def Game(level, lives, score):
         pass
         joypad_status = False
         
-    sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'ACTIONIS.ttf')        
+    sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'ACTIONIS.TTF')        
     score_font = pygame.font.Font(sys_name, 35)
     
     sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'COOLFONT.ttf')
@@ -32,7 +32,7 @@ def Game(level, lives, score):
     size = (800, 640)
     screen = pygame.display.set_mode(size)
     
-    sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'Background.JPG')
+    sys_name = os.path.join(sys.path[0], 'Pybreaker-images', 'Background.jpg')
     background = pygame.image.load(sys_name).convert()
     
     pygame.display.set_caption('PYBREAKER =D')

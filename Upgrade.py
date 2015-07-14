@@ -9,10 +9,10 @@ class Upgrade(pygame.sprite.Sprite):
 
         self.number_upgrade = random.randint(0, 5)
         
-        sys_name = os.path.join(sys.path[0], 'Pybreaker-Images', '{0}' .format(list_img[self.number_upgrade]))
+        sys_name = os.path.join(sys.path[0], 'Pybreaker-images', '{0}' .format(list_img[self.number_upgrade]))
         self.image = pygame.image.load(sys_name).convert()
 
-        sys_name = os.path.join(sys.path[0], 'Pybreaker-Sounds', '{0}' .format(list_sound[self.number_upgrade]))
+        sys_name = os.path.join(sys.path[0], 'Pybreaker-sounds', '{0}' .format(list_sound[self.number_upgrade]))
         self.sound = pygame.mixer.Sound(sys_name)
         
         self.rect = self.image.get_rect()
@@ -39,5 +39,5 @@ class Upgrade(pygame.sprite.Sprite):
             self.rect.centerx -= 3
         
            
-list_img = ['LASERPOWER.PNG', 'GROWPADDLE.PNG', 'SHRINKPADDLE.PNG', 'MULTIBALL.PNG', '1UP.PNG', 'STICKY.PNG']
-list_sound = ['LASERMESSAGE.OGG', 'SUPERPADDLE.OGG', 'SHRINKPADDLE.OGG', 'MULTIBALL.OGG', '1UP.OGG', 'STICKYBALL.OGG']
+list_img = ['LASERPOWER.png', 'GROWPADDLE.png', 'SHRINKPADDLE.png', 'MULTIBALL.png', '1UP.png', 'STICKY.png']
+list_sound = ['LASERMESSAGE.ogg', 'SUPERPADDLE.ogg', 'SHRINKPADDLE.ogg', 'MULTIBALL.ogg', '1UP.ogg', 'STICKYBALL.ogg']

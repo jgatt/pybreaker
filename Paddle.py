@@ -114,4 +114,4 @@ class Paddle(pygame.sprite.Sprite):
         "Set's the paddle's sticky status to 'True' which forces the ball to 'stick' to the paddle"
         self.STICKY = True
         
-image_list = ['big_paddle_2.PNG', 'UPGRADEPADDLE1.PNG', 'UPGRADEPADDLE2.PNG', 'DOWNGRADEPADDLE.PNG']
+image_list = ['big_paddle_2.png', 'UPGRADEPADDLE1.png', 'UPGRADEPADDLE2.png', 'DOWNGRADEPADDLE.png']
