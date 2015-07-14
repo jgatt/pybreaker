@@ -1,0 +1,17 @@
+(dp0
+I50000
+S'BILLY BOB THE KING'
+p1
+sI20000
+S'Player2'
+p2
+sI15000
+S'Player3'
+p3
+sI10000
+S'Player4'
+p4
+sI5000
+S'Player5'
+p5
+s.

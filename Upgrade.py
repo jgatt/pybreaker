@@ -1,0 +1,43 @@
+import pygame, os, sys, random
+
+from pygame.locals import *
+
+class Upgrade(pygame.sprite.Sprite):
+    
+    def __init__(self, center_x, center_y):
+        pygame.sprite.Sprite.__init__(self)
+
+        self.number_upgrade = random.randint(0, 5)
+        
+        sys_name = os.path.join(sys.path[0], 'Pybreaker-Images', '{0}' .format(list_img[self.number_upgrade]))
+        self.image = pygame.image.load(sys_name).convert()
+
+        sys_name = os.path.join(sys.path[0], 'Pybreaker-Sounds', '{0}' .format(list_sound[self.number_upgrade]))
+        self.sound = pygame.mixer.Sound(sys_name)
+        
+        self.rect = self.image.get_rect()
+        
+        self.rect.centerx = center_x
+        self.rect.centery = center_y
+        
+        self.image.set_colorkey((0, 255, 0))
+        
+        self.dy = 5
+        
+        self.count = 0
+        
+        
+    def update(self):
+        self.rect.centery += self.dy
+        self.count += 1
+        
+        if self.count > 10:
+            self.count = 0
+        elif self.count < 5:
+            self.rect.centerx += 3
+        elif self.count > 5:
+            self.rect.centerx -= 3
+        
+           
+list_img = ['LASERPOWER.PNG', 'GROWPADDLE.PNG', 'SHRINKPADDLE.PNG', 'MULTIBALL.PNG', '1UP.PNG', 'STICKY.PNG']
+list_sound = ['LASERMESSAGE.OGG', 'SUPERPADDLE.OGG', 'SHRINKPADDLE.OGG', 'MULTIBALL.OGG', '1UP.OGG', 'STICKYBALL.OGG']
